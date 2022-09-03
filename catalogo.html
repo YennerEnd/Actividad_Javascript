@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+
+<script src="script.js"></script>
+
+</head>
+
+<body onload="mostrar()">
+
+    <h4>
+        <a href="nproductos.html">INGRESAR COMO CLIENTE</a>
+    </h4>
+
+    <ul>
+        <li><a href="catalogo.html">Catalogo de Productos</a></li>
+    </ul>
+
+    <div>
+        <h1 for="catalogo">Catalogo de Productos</h1>
+    </div>
+    
+    <form>
+        <fieldset>
+
+            <div>
+                <label for="codigo">Codigo</label>
+                <input type="number" name="codigo" id="codigo">
+            </div>
+
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <div>
+                <label for="precio">Precio</label>
+                <input type="number" name="precio" id="precio">
+            </div>
+
+            <div>
+                <label for="imagen">Imagen</label>
+                <input type="file" name="imagen" id="imagen">
+            </div>
+
+        </fieldset>
+    </form>
+
+    <section>
+        <button type="submit" onclick="guardarRegistro()" "guardarRegistro()">Guardar</button>
+    </section>
+
+    <section>
+        <button type="submit" onclick="guardar()">Guardar 2</button>
+    </section>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+
+        <tbody id="detalle">
+
+        </tbody>
+    </table>
+
+</body>
+</html>
